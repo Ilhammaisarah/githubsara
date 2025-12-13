@@ -9,13 +9,13 @@ The system calculates ticket prices based on user input and generates a formatte
 
 ⚙️ Features
 
-Ticket price calculation
+1) Ticket price calculation
 
-Receipt generation
+2) Receipt generation
 
-User input handling
+3) User input handling
 
-Simple and clear console output
+4) Simple and clear console output
 
 🛠️ Technologies Used
 
@@ -25,23 +25,23 @@ IDE/Compiler: (e.g. Dev C++, Code::Blocks, Visual Studio, or leave blank)
 
 ▶️ How to Run
 
-Clone the repository
+1) Clone the repository
 
-Open the project using a C++ compiler or IDE
+2) Open the project using a C++ compiler or IDE
 
-Compile and run the program
+3) Compile and run the program
 
-Follow the on-screen instructions to generate a receipt
+4) Follow the on-screen instructions to generate a receipt
 
 🎯 Purpose of Project
 
 This project was created as an academic exercise to practice:
 
-Programming logic
+1) Programming logic
 
-Basic calculations
+2) Basic calculations
 
-Input/output handling in C++
+3) Input/output handling in C++
 
 📅 Year
 
