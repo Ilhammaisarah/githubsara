@@ -1,7 +1,7 @@
 #  📌 Fairyland Theme Park Receipt System (C++)
 
 ## 📝 Description
-This project is a C++ program that simulates a receipt generation system for a Fairyland-themed amusement park. The system calculates ticket prices based on user input and generates a formatted receipt for customers.
+**This project is a C++ program that simulates a receipt generation system for a Fairyland-themed amusement park. The system calculates ticket prices based on user input and generates a formatted receipt for customers.**
 
 **Language:** C++  
 **Year:** 2023
