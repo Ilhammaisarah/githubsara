@@ -1,5 +1,6 @@
 #include<iostream>
 #include<iomanip>
+#include <ctime>
 
 using namespace std;
 	
@@ -100,6 +101,15 @@ int main()
 		}
 
 		balance = money - totalPrice;
+		
+	    time_t now = time(0);
+        now += 8 * 3600;   // Force Malaysia time (UTC +8)
+        tm *ltm = gmtime(&now);
+        
+		int hour = ltm->tm_hour;
+        string ampm = (hour >= 12) ? "PM" : "AM";
+        hour = hour % 12;
+        if (hour == 0) hour = 12;
 
 		// receipt
 		cout << "_____________________________________ " << endl;
@@ -108,7 +118,14 @@ int main()
 		cout << "\t\t\t\t\t\t GENTING SKYWORLD " << endl;
 		cout << "\t\t\t\t\t\t GENTING HIGHLANDS " << endl;
 		cout << "\t\t\t\t\t++++++++++++++++++++++++++++++++++++ " <<endl;
-		cout << "Date : 25 JUNE 2022\t\t\tTime : 8.15p.m. " << endl;
+		cout << "Date     : "
+             << ltm->tm_mday << "/"
+             << 1 + ltm->tm_mon << "/"
+             << 1900 + ltm->tm_year
+             << "\t\t\t\t\t\tTime : "
+             << setw(2) << setfill('0') << hour << ":"
+             << setw(2) << setfill('0') << ltm->tm_min << " "
+             << ampm << endl;
 
 		cout << "\nYOUR TICKET INFORMATION : " << endl;
 		cout << "--------------------------------------------------------------------------------------------------------- " << endl;
@@ -136,3 +153,4 @@ int main()
 
 	return 0;
 }
+
