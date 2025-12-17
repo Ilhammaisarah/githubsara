@@ -30,8 +30,8 @@
 
 **This project was created as an academic exercise to practice:**
 
-**1)Programming logic**
+**1) Programming logic**
 
-**2)Basic calculations**
+**2) Basic calculations**
 
-**3)Input/output handling in C++**
+**3) Input/output handling in C++**
